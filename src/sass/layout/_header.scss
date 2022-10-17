@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: .15rem solid rgba(0,0,0,.1);
+    .logo {
+        width: 12rem;
+    }
+    .menu {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 1.3rem;
+    }
+    &__options {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 1.3rem;
+    }
+    &__option {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        &__icon {
+            width: 2rem;
+            &--flag {
+                border-radius: 50%;
+                height: 2rem;
+            }
+        }
+    }
+}

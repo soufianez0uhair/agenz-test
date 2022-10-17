@@ -1,13 +1,90 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  padding: 0;
+  box-sizing: border-box; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+html {
+  font-size: 62.5%; }
+
+img {
+  max-width: 100%; }
+
+input {
+  outline: none;
+  border: none; }
+
+button {
+  outline: none;
+  border: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+ul {
+  list-style: none; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; }
+
+.search {
+  display: flex;
+  gap: 1.5rem;
+  padding: .5rem 2rem;
+  align-items: center;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1); }
+  .search__input {
+    width: 27rem; }
+    .search__input-box {
+      display: flex;
+      align-items: center;
+      border: 0.1rem solid rgba(0, 0, 0, 0.1);
+      padding: 1rem; }
+  .search__select {
+    width: 10rem;
+    text-align: center;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    background: none;
+    color: #460AF0;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    padding: .5rem; }
+
+.icon {
+  font-size: 1.8rem;
+  color: #460AF0; }
+
+.btn {
+  background: #460AF0;
+  color: #fff;
+  padding: .5rem 1rem;
+  border-radius: .3rem; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 0.15rem solid rgba(0, 0, 0, 0.1); }
+  .header .logo {
+    width: 12rem; }
+  .header .menu {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.3rem; }
+  .header__options {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.3rem; }
+  .header__option {
+    display: flex;
+    gap: .5rem;
+    align-items: center; }
+    .header__option__icon {
+      width: 2rem; }
+      .header__option__icon--flag {
+        border-radius: 50%;
+        height: 2rem; }
