@@ -15,11 +15,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "compile:sass": "node-sass src/sass/main.scss src/index.css -w",
-    "maps:fix": "cross-env GENERATE_SOURCEMAP=false npm run build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^7.0.3",
+    "react-app-rewired": "^2.2.1"
   }
 }
