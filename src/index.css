@@ -63,6 +63,10 @@ body {
   padding: .5rem 1rem;
   border-radius: .3rem; }
 
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
 .header {
   display: flex;
   justify-content: space-between;
