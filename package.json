@@ -17,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "compile:sass": "node-sass src/sass/main.scss src/index.css -w",
+    "maps:fix": "cross-env GENERATE_SOURCEMAP=false npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
