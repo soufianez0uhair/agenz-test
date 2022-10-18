@@ -3,6 +3,13 @@
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     &__details {
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        font-size: 1.2rem;
+    }
+    &__prix {
+        font-size: 1.7rem;
     }
     &__img {
         transition: transform .2s ease-in;
@@ -13,5 +20,9 @@
             height: 15.8rem;
             overflow: hidden;
         }
+    }
+    &__author {
+        color: rgba(0,0,0,.7);
+        font-size: 1rem;
     }
 }

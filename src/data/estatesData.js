@@ -7,7 +7,7 @@ export const estatesData = [
     {
         _id: '46746734839',
         image: Estate1,
-        prix: '1,110,122MAD',
+        prix: '1,110,122 MAD',
         type: 'Maison',
         aVendre: 'a vendre',
         chambres: '3 chambres',

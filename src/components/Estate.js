@@ -16,7 +16,8 @@ const Estate = ({estate}) => {
             {!isFavorite ? <AiOutlineHeart onClick={handleIsFavorite} className="icon icon--heart" /> : <AiFillHeart onClick={handleIsFavorite} className="icon icon--heart" />}
             <div className="estate__details">
                 <h2 className="estate__prix">{estate.prix}</h2>
-                <span className="estate__description">{estate.type} {estate.aVendre} | {estate.chambres} | {estate.surface + '<sup>2</sup>'} | {estate.addresse}  </span>
+                <span className="estate__description">{estate.type} {estate.aVendre} | {estate.chambres} | <span>{estate.surface}<sup>2</sup></span></span>
+                <span className="estate__addresse">{estate.addresse}</span>
                 <span className="estate__author">ANNONCE PAR: {estate.annonceur}</span>
             </div>
         </div>
