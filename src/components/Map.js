@@ -1,9 +1,10 @@
-import mapboxgl from "mapbox-gl";
+import mapboxgl from 'mapbox-gl';
 
 import { useRef, useState, useEffect } from "react";
 
 const Map = () => {
     mapboxgl.accessToken = 'pk.eyJ1Ijoic291ZmlhbmV6b3VoYWlyIiwiYSI6ImNsMmtkeTAwMjBjN3QzZG5xNG4wdzd1a3UifQ.kLI5SxFOg7jAEEfe-SMiqw';
+    mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default; // eslint-disable-line
 
     const mapContainer = useRef(null);
     const map = useRef(null);
