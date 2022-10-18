@@ -1,5 +1,3 @@
-import mapboxgl from '!mapbox-gl'
-
 import { useRef, useState, useEffect } from "react";
 
 const Map = () => {
