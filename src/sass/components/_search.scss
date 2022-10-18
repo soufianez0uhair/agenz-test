@@ -1,4 +1,9 @@
 .search {
+    position: fixed;
+    top: 7.4rem;
+    left: 0;
+    right: 0;
+    z-index: 3;
     display: flex;
     gap: 1.5rem;
     padding: .5rem 2rem;

@@ -30,6 +30,11 @@ body {
   font-weight: 400; }
 
 .search {
+  position: fixed;
+  top: 7.4rem;
+  left: 0;
+  right: 0;
+  z-index: 3;
   display: flex;
   gap: 1.5rem;
   padding: .5rem 2rem;
@@ -56,6 +61,12 @@ body {
 .icon {
   font-size: 1.8rem;
   color: #460AF0; }
+  .icon--heart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #fff;
+    font-size: 3rem; }
 
 .btn {
   background: #460AF0;
@@ -64,10 +75,61 @@ body {
   border-radius: .3rem; }
 
 .hero {
+  margin-top: 12.5rem;
+  z-index: -2;
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 12.5rem);
+  overflow: scroll; }
+
+.map-container {
+  width: 50vw;
+  height: 100%;
+  position: fixed; }
+
+.realEstate {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; }
+  .realEstate__details {
+    display: flex;
+    justify-content: space-between; }
+  .realEstate__agents {
+    padding: .5rem 2rem;
+    font-size: 1.3rem;
+    background: #00B4FF;
+    color: #fff;
+    border-radius: 3rem; }
+  .realEstate__select {
+    color: #460AF0;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    background: none; }
+    .realEstate__select-box {
+      display: flex;
+      gap: .5rem;
+      align-items: center; }
+      .realEstate__select-box label {
+        font-weight: 500; }
+
+.estates {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(29.5rem, 1fr));
+  gap: 1rem;
+  box-shadow: -0.5rem 0 1rem rgba(0, 0, 0, 0.1);
+  z-index: 1000; }
+
+.estate {
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
+  .estate__details {
+    padding: 1rem; }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

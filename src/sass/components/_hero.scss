@@ -1,4 +1,8 @@
 .hero {
+    margin-top: 12.5rem;
+    z-index: -2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 12.5rem);
+    overflow: scroll;
 }

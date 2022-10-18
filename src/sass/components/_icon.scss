@@ -1,4 +1,11 @@
 .icon {
     font-size: 1.8rem;
     color: $blue;
+    &--heart {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: #fff;
+        font-size: 3rem;
+    }
 }
