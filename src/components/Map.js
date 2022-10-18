@@ -7,8 +7,8 @@ const Map = () => {
 
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const [lng, setLng] = useState(-70.9);
-    const [lat, setLat] = useState(42.35);
+    const [lng, setLng] = useState(-7.498919963836671);
+    const [lat, setLat] = useState(33.59450033228673);
     const [zoom, setZoom] = useState(9);
 
     useEffect(() => {

@@ -124,6 +124,13 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); }
   .estate__details {
     padding: 1rem; }
+  .estate__img {
+    transition: transform .2s ease-in; }
+    .estate__img:hover {
+      transform: scale(1.2); }
+    .estate__img-box {
+      height: 15.8rem;
+      overflow: hidden; }
 
 .header {
   position: fixed;

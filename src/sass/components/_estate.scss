@@ -4,4 +4,14 @@
     &__details {
         padding: 1rem;
     }
+    &__img {
+        transition: transform .2s ease-in;
+        &:hover {
+            transform: scale(1.2);
+        }
+        &-box {
+            height: 15.8rem;
+            overflow: hidden;
+        }
+    }
 }
